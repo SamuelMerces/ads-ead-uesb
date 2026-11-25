@@ -17,7 +17,10 @@
         </div>
       </div>
       <div class="topbar-actions">
-        <select id="periodSelect" class="select-input" aria-label="Selecionar Semestre e Bloco" title="Alternar Semestre / Bloco"></select>
+        <label class="period-picker" for="periodSelect" title="Alternar Semestre e Bloco">
+          <span class="period-picker-label">🗓️ Período</span>
+          <select id="periodSelect" class="period-select" aria-label="Selecionar Semestre e Bloco"></select>
+        </label>
         <span class="meta-pill" id="updatedLabel">Atualizado em —</span>
         <button class="btn btn-primary" id="btnExportICS" title="Exportar atividades visíveis para Google Agenda, Outlook ou Apple Calendar">📅 Exportar (.ics)</button>
         <a class="btn" href="https://moodle4.uesb.br/" target="_blank" rel="noopener">Moodle UESB ↗</a>
