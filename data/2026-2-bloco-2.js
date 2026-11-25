@@ -11,8 +11,8 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
     semestre: "2026.2",
     bloco: "Bloco 2",
     periodoLetivo: "16/11/2026 a 06/03/2027",
-    atualizadoEm: "2026-11-25T09:28:00-03:00",
-    atualizadoLabel: "25/11/2026 às 09:28",
+    atualizadoEm: "2026-11-25T12:06:00-03:00",
+    atualizadoLabel: "25/11/2026 às 12:06",
     moodleUrl: "https://moodle4.uesb.br/",
     recessos: [
       { titulo: "Recesso de Fim de Ano", inicio: "2026-12-20", fim: "2027-01-09" },
@@ -48,7 +48,7 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       cor: "#059669",
       corSuave: "rgba(5, 150, 105, 0.14)",
       status: "Parcial",
-      resumo: "Cronograma semanal (quartas, 20h–22h) e rubricas publicados. Aguardando abertura das tarefas nas Unidades I e II no Moodle.",
+      resumo: "Cronograma semanal (quartas, 20h–22h), rubricas e materiais iniciais da Unidade I (apostila OO e Collections e fórum Collections) publicados.",
       moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1152",
       escalaNota: "100 pts (100%)",
       avaliacoes: [
@@ -100,7 +100,7 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       id: "extensao",
       nome: "Atividades Acadêmicas de Extensão I – Cont. Módulo I",
       sigla: "EXT I",
-      professor: "A confirmar",
+      professor: "Prof.ª Élica Paiva",
       cargaHoraria: "Extensão",
       cor: "#e11d48",
       corSuave: "rgba(225, 29, 72, 0.14)",
@@ -198,6 +198,18 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       avaliativa: false,
       descricao: "Prática guiada de cadastro CRUD em memória e exercício individual selecionando List para cenários propostos.",
       url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-aula-26nov",
+      disciplinaId: "modelagem",
+      titulo: "Aula Síncrona – Modelagem de Software",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-26",
+      horario: "19:00–20:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono divulgado no calendário do Moodle na Sala Virtual RNP.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
     },
     {
       id: "pesq-aps2",
