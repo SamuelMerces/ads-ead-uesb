@@ -170,7 +170,25 @@
         : `${DATA.meta.curso} • ${DATA.meta.periodoLetivo}`;
     }
     const upd = document.getElementById("updatedLabel");
-    if (upd) upd.textContent = `Atualizado em ${DATA.meta.atualizadoLabel}`;
+    if (upd) {
+      upd.className = "meta-pill";
+      const updatedMs = DATA.meta.atualizadoEm ? new Date(DATA.meta.atualizadoEm).getTime() : NaN;
+      let statusCls = "freshness-fresh";
+      let tip = "Cronograma atualizado recentemente (até 2 dias)";
+      if (!Number.isNaN(updatedMs)) {
+        const ageDays = (Date.now() - updatedMs) / (1000 * 60 * 60 * 24);
+        if (ageDays > 3) {
+          statusCls = "freshness-stale";
+          tip = `Atenção: última atualização há ${Math.floor(ageDays)} dias (mais de 3 dias)`;
+        } else if (ageDays > 2) {
+          statusCls = "freshness-warn";
+          tip = `Aviso: última atualização há mais de 2 dias`;
+        }
+      }
+      upd.classList.add(statusCls);
+      upd.title = tip;
+      upd.innerHTML = `<span class="status-dot" aria-hidden="true"></span>Atualizado em ${DATA.meta.atualizadoLabel}`;
+    }
 
     const footerNote = document.getElementById("footerNote");
     if (footerNote && !isTutorMode) {
