@@ -18,6 +18,19 @@ window.UESB_PERIODOS = [
     arquivoTutor: "data/2026-2-bloco-2.js"
   },
   {
+    id: "2026-2-bloco-1",
+    semestre: "2026.2",
+    bloco: "Bloco 1",
+    label: "2026.2 • Bloco 1",
+    periodoLetivo: "18/08/2026 a 13/11/2026",
+    mesInicial: "2026-08",
+    mesFinal: "2026-12",
+    atual: false,
+    encerrado: true,
+    arquivo: "data/2026-2-bloco-1.js",
+    arquivoTutor: "data/2026-2-bloco-1.js"
+  },
+  {
     id: "2026-1-bloco-2",
     semestre: "2026.1",
     bloco: "Bloco 2",
