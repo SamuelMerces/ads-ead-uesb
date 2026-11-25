@@ -172,22 +172,27 @@
     const upd = document.getElementById("updatedLabel");
     if (upd) {
       upd.className = "meta-pill";
-      const updatedMs = DATA.meta.atualizadoEm ? new Date(DATA.meta.atualizadoEm).getTime() : NaN;
-      let statusCls = "freshness-fresh";
-      let tip = "Cronograma atualizado recentemente (até 2 dias)";
-      if (!Number.isNaN(updatedMs)) {
-        const ageDays = (Date.now() - updatedMs) / (1000 * 60 * 60 * 24);
-        if (ageDays > 3) {
-          statusCls = "freshness-stale";
-          tip = `Atenção: última atualização há ${Math.floor(ageDays)} dias (mais de 3 dias)`;
-        } else if (ageDays > 2) {
-          statusCls = "freshness-warn";
-          tip = `Aviso: última atualização há mais de 2 dias`;
+      if (DATA.meta.encerrado) {
+        upd.title = "Período letivo encerrado — mantido para consulta histórica";
+        upd.innerHTML = `<span class="status-dot" aria-hidden="true"></span>${DATA.meta.atualizadoLabel}`;
+      } else {
+        const updatedMs = DATA.meta.atualizadoEm ? new Date(DATA.meta.atualizadoEm).getTime() : NaN;
+        let statusCls = "freshness-fresh";
+        let tip = "Cronograma atualizado recentemente (até 2 dias)";
+        if (!Number.isNaN(updatedMs)) {
+          const ageDays = (Date.now() - updatedMs) / (1000 * 60 * 60 * 24);
+          if (ageDays > 3) {
+            statusCls = "freshness-stale";
+            tip = `Atenção: última atualização há ${Math.floor(ageDays)} dias (mais de 3 dias)`;
+          } else if (ageDays > 2) {
+            statusCls = "freshness-warn";
+            tip = `Aviso: última atualização há mais de 2 dias`;
+          }
         }
+        upd.classList.add(statusCls);
+        upd.title = tip;
+        upd.innerHTML = `<span class="status-dot" aria-hidden="true"></span>Atualizado em ${DATA.meta.atualizadoLabel}`;
       }
-      upd.classList.add(statusCls);
-      upd.title = tip;
-      upd.innerHTML = `<span class="status-dot" aria-hidden="true"></span>Atualizado em ${DATA.meta.atualizadoLabel}`;
     }
 
     const footerNote = document.getElementById("footerNote");
@@ -731,7 +736,7 @@
     const sel = document.getElementById("periodSelect");
     if (sel) {
       sel.innerHTML = PERIODOS.map(
-        (p) => `<option value="${p.id}">${p.label}${p.atual ? " (Atual)" : ""}</option>`
+        (p) => `<option value="${p.id}">${p.label}${p.atual ? " (Atual)" : p.encerrado ? " (Encerrado)" : ""}</option>`
       ).join("");
       sel.addEventListener("change", () => selectPeriodo(sel.value, true));
     }
