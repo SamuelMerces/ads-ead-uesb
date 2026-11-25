@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronograma ADS EaD — UESB</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-mode="aluno" data-public-base="">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">ADS</div>
+        <div>
+          <h1 id="headerTitle">Cronograma de Atividades — UESB</h1>
+          <p id="headerSub">Tecnólogo em Análise e Desenvolvimento de Sistemas (EaD)</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <select id="periodSelect" class="select-input" aria-label="Selecionar Semestre e Bloco" title="Alternar Semestre / Bloco"></select>
+        <span class="meta-pill" id="updatedLabel">Atualizado em —</span>
+        <button class="btn btn-primary" id="btnExportICS" title="Exportar atividades visíveis para Google Agenda, Outlook ou Apple Calendar">📅 Exportar (.ics)</button>
+        <a class="btn" href="https://moodle4.uesb.br/" target="_blank" rel="noopener">Moodle UESB ↗</a>
+        <button class="btn" id="btnTheme">🌙 Modo Escuro</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="kpi-grid" id="kpiGrid"></section>
+
+    <nav class="nav-tabs" aria-label="Visualizações">
+      <button class="tab-btn active" data-tab="calendario">📅 Calendário Mensal</button>
+      <button class="tab-btn" data-tab="lista">📋 Cronograma Completo</button>
+      <button class="tab-btn" data-tab="disciplinas">📚 Disciplinas e Pesos</button>
+    </nav>
+
+    <section class="filter-bar" id="filterBar">
+      <div class="filter-row">
+        <input type="search" id="searchInput" class="search-input" placeholder="Buscar atividade, disciplina, tema ou encontro..." />
+        <select id="typeFilter" class="select-input" aria-label="Filtrar por tipo">
+          <option value="todos">Todos os tipos</option>
+          <option value="Avaliativa">★ Avaliativa</option>
+          <option value="Checkpoint">Checkpoint de Projeto</option>
+          <option value="Fórum">Fórum</option>
+          <option value="Quizz">Quizz</option>
+          <option value="Encontro Síncrono">Encontro Síncrono</option>
+          <option value="Unidade">Período de Unidade</option>
+          <option value="Recesso">Recesso</option>
+        </select>
+        <select id="statusFilter" class="select-input" aria-label="Filtrar por status">
+          <option value="todos">Todos os status</option>
+          <option value="abertas">Em andamento</option>
+          <option value="proximas">Próximas e abertas</option>
+          <option value="encerradas">Encerradas</option>
+        </select>
+      </div>
+      <div class="chip-group" id="courseChips"></div>
+    </section>
+
+    <section id="panel-calendario" class="tab-panel active">
+      <div class="calendar-card">
+        <div class="calendar-header">
+          <h2 class="calendar-title" id="calTitle">Calendário</h2>
+          <div class="calendar-nav">
+            <button class="btn" id="calPrev">◀ Anterior</button>
+            <button class="btn" id="calToday">Hoje</button>
+            <button class="btn" id="calNext">Próximo ▶</button>
+          </div>
+        </div>
+        <div class="calendar-grid" id="calGrid"></div>
+      </div>
+    </section>
+
+    <section id="panel-lista" class="tab-panel">
+      <div id="eventListContainer"></div>
+    </section>
+
+    <section id="panel-disciplinas" class="tab-panel">
+      <div class="courses-grid" id="coursesGrid"></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="eventModal" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <div class="badges">
+            <span class="badge" id="modalCourse"></span>
+            <span class="badge badge-type" id="modalType"></span>
+          </div>
+          <h3 id="modalTitle" style="font-size:1.08rem;margin-top:0.35rem"></h3>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      </div>
+      <p id="modalDesc" style="font-size:0.9rem;color:var(--text-muted)"></p>
+      <div class="modal-meta">
+        <div><strong style="display:block;font-size:0.74rem;color:var(--text-soft)">DATA / PRAZO</strong><span id="modalDate"></span></div>
+        <div><strong style="display:block;font-size:0.74rem;color:var(--text-soft)">PESO / NOTA</strong><span id="modalWeight"></span></div>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary" id="modalLink" href="#" target="_blank" rel="noopener">Abrir atividade no Moodle ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p id="footerNote">Painel de apoio aos estudantes de ADS EaD — UESB. Consulte sempre o Moodle oficial em caso de retificações pelos professores regentes.</p>
+  </footer>
+
+  <script src="data/periodos.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

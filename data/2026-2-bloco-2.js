@@ -1,0 +1,569 @@
+// Dados públicos para o Dashboard do Aluno — UESB ADS EaD 2026.2 (Bloco 2)
+// IMPORTANTE: Este arquivo é publicado no GitHub Pages.
+// Nunca incluir itens ocultos no Moodle, contagens de correção ou notas internas de tutoria.
+
+window.UESB_DADOS_ALUNOS = window.UESB_DADOS_ALUNOS || {};
+window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
+  meta: {
+    id: "2026-2-bloco-2",
+    instituicao: "UESB — UAB / CEAD",
+    curso: "Tecnólogo em Análise e Desenvolvimento de Sistemas (EaD)",
+    semestre: "2026.2",
+    bloco: "Bloco 2",
+    periodoLetivo: "16/11/2026 a 06/03/2027",
+    atualizadoEm: "2026-11-25T09:28:00-03:00",
+    atualizadoLabel: "25/11/2026 às 09:28",
+    moodleUrl: "https://moodle4.uesb.br/",
+    recessos: [
+      { titulo: "Recesso de Fim de Ano", inicio: "2026-12-20", fim: "2027-01-09" },
+      { titulo: "Recesso de Carnaval", inicio: "2027-02-07", fim: "2027-02-13" }
+    ]
+  },
+  disciplinas: [
+    {
+      id: "modelagem",
+      nome: "Modelagem de Software",
+      sigla: "MOD",
+      professor: "Prof. William da Silva Melo",
+      cargaHoraria: "60h",
+      cor: "#2563eb",
+      corSuave: "rgba(37, 99, 235, 0.14)",
+      status: "Ativa",
+      resumo: "Unidades 1 a 3 publicadas com cronograma, rubricas, fórum avaliativo e mini projeto em duas etapas.",
+      moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1145",
+      escalaNota: "10,0 pts",
+      avaliacoes: [
+        { nome: "Fórum Avaliativo (Unidade 1)", peso: 10, label: "1,0 pt" },
+        { nome: "Mini Projeto – Etapa 1", peso: 19, label: "1,9 pt" },
+        { nome: "Mini Projeto – Etapa 2", peso: 20, label: "2,0 pts" },
+        { nome: "Avaliação Presencial Final", peso: 51, label: "5,1 pts" }
+      ]
+    },
+    {
+      id: "poo2",
+      nome: "Programação Orientada a Objetos II",
+      sigla: "POO II",
+      professor: "Prof. Murilo Silva Santana",
+      cargaHoraria: "Java • 12 Encontros",
+      cor: "#059669",
+      corSuave: "rgba(5, 150, 105, 0.14)",
+      status: "Parcial",
+      resumo: "Cronograma semanal (quartas, 20h–22h) e rubricas publicados. Aguardando abertura das tarefas nas Unidades I e II no Moodle.",
+      moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1152",
+      escalaNota: "100 pts (100%)",
+      avaliacoes: [
+        { nome: "Exercícios e Práticas", peso: 29, label: "29%" },
+        { nome: "Projeto Integrador (3 checkpoints + entrega)", peso: 20, label: "20%" },
+        { nome: "Avaliação Escrita Individual", peso: 51, label: "51%" }
+      ]
+    },
+    {
+      id: "pesquisa",
+      nome: "Pesquisa Aplicada à Computação",
+      sigla: "PESQ",
+      professor: "Prof. Robson Hebraico C. Maniçoba",
+      cargaHoraria: "60h",
+      cor: "#7c3aed",
+      corSuave: "rgba(124, 58, 237, 0.14)",
+      status: "Parcial",
+      resumo: "Unidade I ativa com Aulas 01 e 02, gravações, APS 1 (encerrada) e APS 2 aberta até 30/11. Próximas unidades serão liberadas no Moodle.",
+      moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1143",
+      escalaNota: "10,0 pts",
+      avaliacoes: [
+        { nome: "APS 1 – Tema e Subárea", peso: 15, label: "1,5 pt" },
+        { nome: "APS 2 – Problema, Objetivos e Justificativa", peso: 15, label: "1,5 pt" },
+        { nome: "Demais APS (a liberar no Moodle)", peso: 70, label: "7,0 pts" }
+      ]
+    },
+    {
+      id: "ihm",
+      nome: "Interface Homem e Máquina",
+      sigla: "IHM",
+      professor: "Prof. Dr. Lucas Santos de Oliveira",
+      cargaHoraria: "60h",
+      cor: "#d97706",
+      corSuave: "rgba(217, 119, 6, 0.14)",
+      status: "Parcial",
+      resumo: "Plano de Ensino, Cronograma, Livro IHC e Rubricas publicados. Aguardando abertura das tarefas individuais no Moodle.",
+      moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1148",
+      escalaNota: "Média ponderada (pesos = 10)",
+      avaliacoes: [
+        { nome: "Fórum: Caixas Eletrônicos e Totens", peso: 20, label: "Peso 2" },
+        { nome: "Exercícios Caps. 2 e 3", peso: 10, label: "Peso 1" },
+        { nome: "Criação de Personas", peso: 10, label: "Peso 1" },
+        { nome: "Criação do Cenário", peso: 10, label: "Peso 1" },
+        { nome: "Protótipo de Baixa Fidelidade", peso: 20, label: "Peso 2" },
+        { nome: "Protótipo de Alta Fidelidade", peso: 30, label: "Peso 3" }
+      ]
+    },
+    {
+      id: "extensao",
+      nome: "Atividades Acadêmicas de Extensão I – Cont. Módulo I",
+      sigla: "EXT I",
+      professor: "A confirmar",
+      cargaHoraria: "Extensão",
+      cor: "#e11d48",
+      corSuave: "rgba(225, 29, 72, 0.14)",
+      status: "Em construção",
+      resumo: "Sala no Moodle ainda em preparação. Assim que o cronograma e as atividades forem publicados, aparecerão automaticamente aqui.",
+      moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1153",
+      escalaNota: "A definir",
+      avaliacoes: []
+    }
+  ],
+  eventos: [
+    // --- NOVEMBRO 2026 ---
+    {
+      id: "ihm-u1",
+      disciplinaId: "ihm",
+      titulo: "Unidade I: Fundamentos de Fatores Humanos em IHC",
+      tipo: "Unidade",
+      data: "2026-11-16",
+      dataFim: "2026-12-14",
+      horario: "Período contínuo",
+      peso: "Conforme rubricas",
+      avaliativa: false,
+      descricao: "Leitura dos capítulos 1 e 2 do livro Interação Humano-Computador, aulas síncronas semanais, lista de atividades (caps. 1 e 2) e quiz de fixação.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1148"
+    },
+    {
+      id: "pesq-enc1",
+      disciplinaId: "pesquisa",
+      titulo: "1º Encontro Síncrono – Fundamentos da Pesquisa Científica e Ética",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-17",
+      horario: "18:40",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro via Sala RNP com o Prof. Robson. Material e gravação da Aula 01 já disponíveis no Moodle.",
+      url: "https://moodle4.uesb.br/mod/url/view.php?id=32134&redirect=1"
+    },
+    {
+      id: "poo2-e1",
+      disciplinaId: "poo2",
+      titulo: "Encontro 1 (Unidade I) – Collections Framework e Início do Projeto Integrador",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-18",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Apresentação da disciplina, atividade diagnóstica, interfaces Collection/List e levantamento de requisitos do projeto integrador.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc1",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 1 – Prof. Regente",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-19",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Primeiro encontro síncrono da Unidade 1 na Sala Virtual RNP.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "pesq-aps1",
+      disciplinaId: "pesquisa",
+      titulo: "APS 1 – Definição e Justificativa do Tema de Pesquisa",
+      tipo: "Avaliativa",
+      data: "2026-11-23",
+      dataAbertura: "2026-11-18",
+      horario: "Até 23:59",
+      peso: "1,5 pt (escala 0–15)",
+      avaliativa: true,
+      descricao: "Envio de PDF curto definindo e justificando o tema escolhido e a subárea da Computação.",
+      url: "https://moodle4.uesb.br/mod/assign/view.php?id=32045"
+    },
+    {
+      id: "pesq-enc2",
+      disciplinaId: "pesquisa",
+      titulo: "2º Encontro Síncrono – Planejamento e Delimitação do Problema",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-24",
+      horario: "18:40",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Aula 02 com o Prof. Robson. Material da Aula 02 e gravação já publicados no Moodle.",
+      url: "https://moodle4.uesb.br/mod/url/view.php?id=32240&redirect=1"
+    },
+    {
+      id: "poo2-e2",
+      disciplinaId: "poo2",
+      titulo: "Encontro 2 (Unidade I) – Listas (ArrayList e LinkedList)",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-25",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Prática guiada de cadastro CRUD em memória e exercício individual selecionando List para cenários propostos.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "pesq-aps2",
+      disciplinaId: "pesquisa",
+      titulo: "APS 2 – Problema de Pesquisa, Objetivos SMART e Justificativa",
+      tipo: "Avaliativa",
+      data: "2026-11-30",
+      dataAbertura: "2026-11-25",
+      horario: "Até 23:59",
+      peso: "1,5 pt (escala 0–15)",
+      avaliativa: true,
+      descricao: "Elaborar e verificar o alinhamento entre problema de pesquisa, objetivos (geral e específicos SMART) e justificativa.",
+      url: "https://moodle4.uesb.br/mod/assign/view.php?id=32051"
+    },
+
+    // --- DEZEMBRO 2026 ---
+    {
+      id: "poo2-e3",
+      disciplinaId: "poo2",
+      titulo: "Encontro 3 (Unidade I) – Set, Map e Entrega de Exercício Prático",
+      tipo: "Avaliativa",
+      data: "2026-12-02",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: true,
+      descricao: "Laboratório com Set e Map e entrega de exercício prático com justificativa da estrutura escolhida para cada requisito.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc2",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 2 – Prof. Regente",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-03",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Segundo encontro síncrono na Sala Virtual RNP sobre modelagem, requisitos e prototipação.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "mod-forum1",
+      disciplinaId: "modelagem",
+      titulo: "Atividade Avaliativa 1 – Fórum: Tipos de Modelagem, Requisitos e Prototipação",
+      tipo: "Fórum",
+      data: "2026-12-05",
+      dataAbertura: "2026-11-16",
+      horario: "Até 23:59",
+      peso: "1,0 pt (nota 0–10)",
+      avaliativa: true,
+      descricao: "Postagem individual (10 a 20 linhas) sobre o Caso da Startup TechEdu + comentários construtivos nas postagens de pelo menos 2 colegas.",
+      url: "https://moodle4.uesb.br/mod/forum/view.php?id=32002"
+    },
+    {
+      id: "mod-quizz1",
+      disciplinaId: "modelagem",
+      titulo: "Questionário 1 / Quizz Modelagem de Software",
+      tipo: "Quizz",
+      data: "2026-12-05",
+      dataAbertura: "2026-11-16",
+      horario: "Até 23:59",
+      peso: "Fixação (sem peso)",
+      avaliativa: false,
+      descricao: "Quizz interativo de fixação dos conceitos da Unidade 1 (até 2 tentativas).",
+      url: "https://moodle4.uesb.br/mod/url/view.php?id=32011&redirect=1"
+    },
+    {
+      id: "mod-grupos",
+      disciplinaId: "modelagem",
+      titulo: "Fórum – Definição de Grupos para o Mini Projeto de Software",
+      tipo: "Fórum",
+      data: "2026-12-06",
+      dataFim: "2026-12-19",
+      horario: "06/12 a 19/12",
+      peso: "Obrigatório (organização)",
+      avaliativa: false,
+      descricao: "Formação dos grupos de 3 a 5 estudantes por polo e escolha do cenário de aplicação para o Mini Projeto antes do recesso.",
+      url: "https://moodle4.uesb.br/mod/forum/view.php?id=32146"
+    },
+    {
+      id: "poo2-cp1",
+      disciplinaId: "poo2",
+      titulo: "Encontro 4 (Unidade I) – Ordenação, Genéricos e Checkpoint 1 do Projeto",
+      tipo: "Checkpoint",
+      data: "2026-12-09",
+      horario: "20:00–22:00",
+      peso: "Compõe Projeto (20%)",
+      avaliativa: true,
+      descricao: "Comparable/Comparator, Generics e Checkpoint 1 do Projeto Integrador: coleções e busca implementadas com devolutiva.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "poo2-e5",
+      disciplinaId: "poo2",
+      titulo: "Encontro 5 (Unidade II) – Arquivos, Streams e I/O em Java (CSV)",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-16",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Exportação e importação em arquivo texto/CSV, validação de dados lidos e tratamento seguro de recursos.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc3",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 3 – Orientações Iniciais do Mini Projeto",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-17",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Orientações com o Prof. William sobre o Mini Projeto de Software antes da pausa letiva.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "recesso-fim-ano",
+      disciplinaId: "geral",
+      titulo: "Pausa Letiva – Recesso de Fim de Ano",
+      tipo: "Recesso",
+      data: "2026-12-20",
+      dataFim: "2027-01-09",
+      horario: "20/12 a 09/01",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Recesso acadêmico de fim de ano. O Moodle permanece acessível para leitura e articulação interna dos grupos.",
+      url: "https://moodle4.uesb.br/"
+    },
+
+    // --- JANEIRO 2027 ---
+    {
+      id: "ihm-u2",
+      disciplinaId: "ihm",
+      titulo: "Unidade II: Modelagem, Paradigmas e Design de Interfaces",
+      tipo: "Unidade",
+      data: "2027-01-11",
+      dataFim: "2027-02-01",
+      horario: "Período contínuo",
+      peso: "Fórum (peso 2) + Tarefas",
+      avaliativa: true,
+      descricao: "Fórum avaliativo (Caixas Eletrônicos e Totens — peso 2), Quiz, Lista caps. 3 e 4, Grupo síncrono mediado (Levantamento de Requisitos), Personas e Cenários.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1148"
+    },
+    {
+      id: "poo2-cp2",
+      disciplinaId: "poo2",
+      titulo: "Encontro 6 (Unidade II) – Serialização e Checkpoint 2 do Projeto",
+      tipo: "Checkpoint",
+      data: "2027-01-13",
+      horario: "20:00–22:00",
+      peso: "Compõe Projeto (20%)",
+      avaliativa: true,
+      descricao: "Persistência de objetos em arquivo e Checkpoint 2 do Projeto Integrador: demonstração dos fluxos de leitura e gravação.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc4",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 4 – Prof. Regente (Unidade 2)",
+      tipo: "Encontro Síncrono",
+      data: "2027-01-14",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Retomada pós-recesso e aprofundamento em diagramas UML comportamentais e estruturais.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "poo2-e7",
+      disciplinaId: "poo2",
+      titulo: "Encontro 7 (Unidade II) – Fundamentos de Testes e Testes Unitários (JUnit)",
+      tipo: "Encontro Síncrono",
+      data: "2027-01-20",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Elaboração e execução de casos de teste para coleções e persistência, incluindo entradas-limite.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-etapa1",
+      disciplinaId: "modelagem",
+      titulo: "Atividade Avaliativa 2 – Mini Projeto de Software (Etapa 1)",
+      tipo: "Avaliativa",
+      data: "2027-01-23",
+      dataAbertura: "2026-12-05",
+      horario: "Até 23:59",
+      peso: "1,9 pt (nota 0–10)",
+      avaliativa: true,
+      descricao: "Entrega em grupo (3–5 alunos): Problema/Escopo, Requisitos (RF/RNF), Protótipo Inicial, Diagrama de Casos de Uso, Atividades e Classes Inicial. (Acompanhe o Moodle para confirmação de eventual prorrogação).",
+      url: "https://moodle4.uesb.br/mod/assign/view.php?id=32147"
+    },
+    {
+      id: "poo2-cp3",
+      disciplinaId: "poo2",
+      titulo: "Encontro 8 (Unidade II) – Qualidade, Depuração e Checkpoint 3 do Projeto",
+      tipo: "Checkpoint",
+      data: "2027-01-27",
+      horario: "20:00–22:00",
+      peso: "Compõe Projeto (20%)",
+      avaliativa: true,
+      descricao: "Correção de defeitos via testes automatizados e Checkpoint 3: entrega da versão testável com evidências de testes.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc5",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 5 – Prof. Regente",
+      tipo: "Encontro Síncrono",
+      data: "2027-01-28",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Quinto encontro síncrono da disciplina na Sala Virtual RNP.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+
+    // --- FEVEREIRO 2027 ---
+    {
+      id: "poo2-e9",
+      disciplinaId: "poo2",
+      titulo: "Encontro 9 (Unidade III) – Threads, Runnable e Sincronização",
+      tipo: "Encontro Síncrono",
+      data: "2027-02-03",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Execução concorrente, condições de corrida e prática orientada com sincronização simples.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "recesso-carnaval",
+      disciplinaId: "geral",
+      titulo: "Pausa Letiva – Recesso de Carnaval",
+      tipo: "Recesso",
+      data: "2027-02-07",
+      dataFim: "2027-02-13",
+      horario: "07/02 a 13/02",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Recesso acadêmico de Carnaval.",
+      url: "https://moodle4.uesb.br/"
+    },
+    {
+      id: "mod-quizz2",
+      disciplinaId: "modelagem",
+      titulo: "Questionário 2 / Quizz Modelagem de Software",
+      tipo: "Quizz",
+      data: "2027-02-13",
+      horario: "Até 23:59",
+      peso: "Fixação (sem peso)",
+      avaliativa: false,
+      descricao: "Questionário de fixação da Unidade 2 previsto no cronograma oficial (link será disponibilizado no Moodle).",
+      url: "https://moodle4.uesb.br/course/view.php?id=1145"
+    },
+    {
+      id: "ihm-u3",
+      disciplinaId: "ihm",
+      titulo: "Unidade III: Avaliação de Interfaces e Prototipação",
+      tipo: "Unidade",
+      data: "2027-02-15",
+      dataFim: "2027-03-06",
+      horario: "Período contínuo",
+      peso: "Protótipos Baixa (2) e Alta (3)",
+      avaliativa: true,
+      descricao: "Aulas síncronas, grupo mediado de prototipação e planejamento de avaliação heurística, Protótipo de baixa fidelidade (peso 2) e Protótipo interativo de alta fidelidade (peso 3).",
+      url: "https://moodle4.uesb.br/course/view.php?id=1148"
+    },
+    {
+      id: "poo2-e10",
+      disciplinaId: "poo2",
+      titulo: "Encontro 10 (Unidade III) – Comunicação em Rede, Cliente-Servidor e Sockets",
+      tipo: "Encontro Síncrono",
+      data: "2027-02-17",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Protótipo cliente-servidor em Java, fluxo de mensagens e tratamento de desconexões.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc6",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 6 – Prof. Regente (Unidade 3)",
+      tipo: "Encontro Síncrono",
+      data: "2027-02-18",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Modelagem avançada e arquitetural com UML (Sequência, Comunicação, Componentes e Implantação).",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "poo2-e11",
+      disciplinaId: "poo2",
+      titulo: "Encontro 11 (Unidade III) – Programação Distribuída e Banco de Dados (JDBC)",
+      tipo: "Encontro Síncrono",
+      data: "2027-02-24",
+      horario: "20:00–22:00",
+      peso: "Compõe Exercícios (29%)",
+      avaliativa: false,
+      descricao: "Conexão Java com base relacional, operações CRUD e separação em camadas no projeto.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-enc7",
+      disciplinaId: "modelagem",
+      titulo: "Encontro Síncrono 7 – Oficina Prática de Diagrama de Sequência e Implantação",
+      tipo: "Encontro Síncrono",
+      data: "2027-02-25",
+      horario: "19:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Oficina prática conduzida pelo Mediador Pedagógico como apoio direto à Etapa 2 do Mini Projeto.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+
+    // --- MARÇO 2027 ---
+    {
+      id: "poo2-final",
+      disciplinaId: "poo2",
+      titulo: "Encontro 12 (Unidade III) – Apresentação do Projeto Integrador e Encerramento",
+      tipo: "Avaliativa",
+      data: "2027-03-03",
+      horario: "20:00–22:00",
+      peso: "Projeto Integrador (20%)",
+      avaliativa: true,
+      descricao: "Relatórios, anotações, empacotamento/distribuição e apresentação final do Projeto Integrador com demonstração dos testes.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "mod-etapa2",
+      disciplinaId: "modelagem",
+      titulo: "Atividade Avaliativa 3 – Mini Projeto de Software (Etapa 2: UML e Relatório Final)",
+      tipo: "Avaliativa",
+      data: "2027-03-05",
+      dataAbertura: "2027-02-14",
+      horario: "Até 23:59",
+      peso: "2,0 pts (nota 0–10)",
+      avaliativa: true,
+      descricao: "Refinamento da Etapa 1 + Diagramas de Sequência, Comunicação, Componentes e Implantação + Relatório Final consolidado e reflexão da equipe.",
+      url: "https://moodle4.uesb.br/mod/assign/view.php?id=32155"
+    },
+    {
+      id: "mod-prova-presencial",
+      disciplinaId: "modelagem",
+      titulo: "Atividade Avaliativa 4 – Avaliação Presencial Final nos Polos",
+      tipo: "Avaliativa",
+      data: null,
+      horario: "Data a definir",
+      peso: "5,1 pts (nota 0–10)",
+      avaliativa: true,
+      descricao: "Avaliação presencial abrangendo todo o conteúdo da disciplina. A data oficial será confirmada nos Avisos do Moodle.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1145"
+    },
+    {
+      id: "poo2-prova-escrita",
+      disciplinaId: "poo2",
+      titulo: "Avaliação Escrita Individual – POO II",
+      tipo: "Avaliativa",
+      data: null,
+      horario: "Data a definir",
+      peso: "51 pts (51%)",
+      avaliativa: true,
+      descricao: "Avaliação individual escrita contemplando compreensão conceitual (18 pts), leitura/análise de código (17 pts) e elaboração de soluções (16 pts).",
+      url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    }
+  ]
+};
