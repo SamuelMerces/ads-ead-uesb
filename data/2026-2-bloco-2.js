@@ -11,8 +11,8 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
     semestre: "2026.2",
     bloco: "Bloco 2",
     periodoLetivo: "16/11/2026 a 06/03/2027",
-    atualizadoEm: "2026-11-25T12:06:00-03:00",
-    atualizadoLabel: "25/11/2026 às 12:06",
+    atualizadoEm: "2026-11-28T09:05:00-03:00",
+    atualizadoLabel: "28/11/2026 às 09:05",
     moodleUrl: "https://moodle4.uesb.br/",
     recessos: [
       { titulo: "Recesso de Fim de Ano", inicio: "2026-12-20", fim: "2027-01-09" },
@@ -29,7 +29,7 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       cor: "#2563eb",
       corSuave: "rgba(37, 99, 235, 0.14)",
       status: "Ativa",
-      resumo: "Unidades 1 a 3 publicadas com cronograma, rubricas, fórum avaliativo e mini projeto em duas etapas.",
+      resumo: "Unidades 1 a 3 publicadas com cronograma, rubricas, slides da Aula 1, fórum avaliativo e mini projeto em duas etapas.",
       moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1145",
       escalaNota: "10,0 pts",
       avaliacoes: [
@@ -66,13 +66,15 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       cor: "#7c3aed",
       corSuave: "rgba(124, 58, 237, 0.14)",
       status: "Parcial",
-      resumo: "Unidade I ativa com Aulas 01 e 02, gravações, APS 1 (encerrada) e APS 2 aberta até 30/11. Próximas unidades serão liberadas no Moodle.",
+      resumo: "Unidades I e II configuradas no Moodle com Aulas 01–04, gravações da Unidade I, APS 1 (encerrada), APS 2 (até 30/11), APS 3 (até 07/12) e APS 4 (até 14/12). Unidade III será liberada posteriormente.",
       moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1143",
       escalaNota: "10,0 pts",
       avaliacoes: [
         { nome: "APS 1 – Tema e Subárea", peso: 15, label: "1,5 pt" },
         { nome: "APS 2 – Problema, Objetivos e Justificativa", peso: 15, label: "1,5 pt" },
-        { nome: "Demais APS (a liberar no Moodle)", peso: 70, label: "7,0 pts" }
+        { nome: "APS 3 – Revisão Bibliográfica e Referencial Teórico", peso: 15, label: "1,5 pt" },
+        { nome: "APS 4 – Metodologias de Pesquisa", peso: 15, label: "1,5 pt" },
+        { nome: "Próximas avaliações (a liberar no Moodle)", peso: 40, label: "4,0 pts" }
       ]
     },
     {
@@ -84,7 +86,7 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       cor: "#d97706",
       corSuave: "rgba(217, 119, 6, 0.14)",
       status: "Parcial",
-      resumo: "Plano de Ensino, Cronograma, Livro IHC e Rubricas publicados. Aguardando abertura das tarefas individuais no Moodle.",
+      resumo: "Plano de Ensino, Cronograma, Livro IHC, Rubricas, Sala Virtual IHC e Slide 1 (Unidade I) publicados, com aulas síncronas às sextas (20h–21h). Aguardando abertura das tarefas individuais no Moodle.",
       moodleUrl: "https://moodle4.uesb.br/course/view.php?id=1148",
       escalaNota: "Média ponderada (pesos = 10)",
       avaliacoes: [
@@ -212,6 +214,18 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
     },
     {
+      id: "ihm-aula-27nov",
+      disciplinaId: "ihm",
+      titulo: "Aula Síncrona – Interface Homem e Máquina",
+      tipo: "Encontro Síncrono",
+      data: "2026-11-27",
+      horario: "20:00–21:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono semanal de IHC na Sala Virtual do Moodle.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32092"
+    },
+    {
       id: "pesq-aps2",
       disciplinaId: "pesquisa",
       titulo: "APS 2 – Problema de Pesquisa, Objetivos SMART e Justificativa",
@@ -226,6 +240,18 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
     },
 
     // --- DEZEMBRO 2026 ---
+    {
+      id: "pesq-enc3",
+      disciplinaId: "pesquisa",
+      titulo: "3º Encontro Síncrono – Revisão Bibliográfica e Referencial Teórico",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-01",
+      horario: "18:30",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono da Aula 03 (Unidade II) com o Prof. Robson. Material da Aula 03 previsto para liberação em 02/12.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1143"
+    },
     {
       id: "poo2-e3",
       disciplinaId: "poo2",
@@ -249,6 +275,18 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       avaliativa: false,
       descricao: "Segundo encontro síncrono na Sala Virtual RNP sobre modelagem, requisitos e prototipação.",
       url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "ihm-aula-04dez",
+      disciplinaId: "ihm",
+      titulo: "Aula Síncrona – Interface Homem e Máquina",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-04",
+      horario: "20:00–21:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono semanal de IHC na Sala Virtual do Moodle.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32092"
     },
     {
       id: "mod-forum1",
@@ -290,6 +328,30 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       url: "https://moodle4.uesb.br/mod/forum/view.php?id=32146"
     },
     {
+      id: "pesq-aps3",
+      disciplinaId: "pesquisa",
+      titulo: "APS 3 – Revisão Bibliográfica e Referencial Teórico",
+      tipo: "Avaliativa",
+      data: "2026-12-07",
+      horario: "Até 23:59",
+      peso: "1,5 pt",
+      avaliativa: true,
+      descricao: "Atividade Prática Semanal 3 (Unidade II) prevista no Moodle e no Calendário após a Aula 03.",
+      url: "https://moodle4.uesb.br/mod/assign/view.php?id=32056"
+    },
+    {
+      id: "pesq-enc4",
+      disciplinaId: "pesquisa",
+      titulo: "4º Encontro Síncrono – Metodologias de Pesquisa em Computação",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-08",
+      horario: "18:30",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono da Aula 04 (Unidade II) com o Prof. Robson. Material da Aula 04 previsto para liberação em 09/12.",
+      url: "https://moodle4.uesb.br/course/view.php?id=1143"
+    },
+    {
       id: "poo2-cp1",
       disciplinaId: "poo2",
       titulo: "Encontro 4 (Unidade I) – Ordenação, Genéricos e Checkpoint 1 do Projeto",
@@ -300,6 +362,31 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       avaliativa: true,
       descricao: "Comparable/Comparator, Generics e Checkpoint 1 do Projeto Integrador: coleções e busca implementadas com devolutiva.",
       url: "https://moodle4.uesb.br/course/view.php?id=1152"
+    },
+    {
+      id: "ihm-aula-11dez",
+      disciplinaId: "ihm",
+      titulo: "Aula Síncrona – Interface Homem e Máquina",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-11",
+      horario: "20:00–21:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono semanal de IHC na Sala Virtual do Moodle.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32092"
+    },
+    {
+      id: "pesq-aps4",
+      disciplinaId: "pesquisa",
+      titulo: "APS 4 – Metodologias de Pesquisa em Computação",
+      tipo: "Avaliativa",
+      data: "2026-12-14",
+      dataAbertura: "2026-12-09",
+      horario: "Até 23:59",
+      peso: "1,5 pt",
+      avaliativa: true,
+      descricao: "Atividade Prática Semanal 4 (Unidade II) prevista no Moodle e no Calendário com abertura em 09/12.",
+      url: "https://moodle4.uesb.br/mod/assign/view.php?id=32062"
     },
     {
       id: "poo2-e5",
@@ -324,6 +411,18 @@ window.UESB_DADOS_ALUNOS["2026-2-bloco-2"] = {
       avaliativa: false,
       descricao: "Orientações com o Prof. William sobre o Mini Projeto de Software antes da pausa letiva.",
       url: "https://moodle4.uesb.br/mod/lti/view.php?id=32141"
+    },
+    {
+      id: "ihm-aula-18dez",
+      disciplinaId: "ihm",
+      titulo: "Aula Síncrona – Interface Homem e Máquina",
+      tipo: "Encontro Síncrono",
+      data: "2026-12-18",
+      horario: "20:00–21:00",
+      peso: "—",
+      avaliativa: false,
+      descricao: "Encontro síncrono semanal de IHC na Sala Virtual do Moodle antes do recesso de fim de ano.",
+      url: "https://moodle4.uesb.br/mod/lti/view.php?id=32092"
     },
     {
       id: "recesso-fim-ano",
